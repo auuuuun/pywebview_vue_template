@@ -14,7 +14,7 @@
 #### 安装教程
     pip install -r requirements.txt
 #### 打包指令，没有黑窗口，并且把静态文件打包进去
-    pyinstaller --onefile --noconsole --add-data="static;static" main.py
+    pyinstaller -F -w --add-data="static;static" main.py
 #### 参数解释 
     --noconsole 打包时指定不生成控制台窗口。
     --add-data="static;static" 打包静态文件
